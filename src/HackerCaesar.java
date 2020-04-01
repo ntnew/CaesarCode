@@ -25,6 +25,9 @@ public class HackerCaesar {
                     index +=step;
                     if (index > 32){
                         index -= 33;
+                        if (index > 32){
+                            index -= 33;
+                        }
                     }
                     textChar[i] = abc[index];
                 }
